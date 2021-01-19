@@ -46,8 +46,9 @@ def init_dashboard(server):
             name = "{0} - {1}".format(lim[0],lim[1])))
 
     county_counts_bubble.update_layout(
-            title_text = "UFO Reports per US County",
+            title_text = "UFO Reports by US County",
             showlegend = True,
+	    height=700,
             geo = dict(
                 scope = "usa",
                 landcolor = "rgb(217, 217, 217)",
