@@ -20,7 +20,7 @@ def random_report():
     random = us_states_df.sample(n=1)
     city = str(random["City"].iloc[0])
     state = str(random["State"].iloc[0])
-    date = str(random["Date / Time"].iloc[0])
+    date = str(random["Datetime"].iloc[0])
     shape = str(random["Shape"].iloc[0])
     duration = str(random["Duration"].iloc[0])
     summary = str(random["Summary"].iloc[0])
