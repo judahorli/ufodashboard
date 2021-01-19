@@ -24,6 +24,5 @@ def random_report():
     duration = str(random["Duration"].iloc[0])
     summary = str(random["Summary"].iloc[0])
     posted_date = str(random["Posted"].iloc[0])
-    html = "<h3>Random Report</h3><div>datetime: " + date + " " + timest + "</div><div>location: " + city + ", " + state + "</div><div>UFO shape identified as " + shape + " shaped</div><div>duration of incident: " + duration + "</div><div>incident summary: " + summary + "</div>"
+    html = "<h3>Random Report</h3><div><span class=\"bold\">datetime: </span>" + date + "</div><div><span class=\"bold\">location: </span>" + city + ", " + state + "</div><div><span class=\"bold\">duration of incident: </span>" + duration + "</div><div>UFO shape identified as " + shape + " shaped</div><div><span class=\"bold\">incident summary: </span>" + summary + "</div>"
     return jsonify(html=html)
-
