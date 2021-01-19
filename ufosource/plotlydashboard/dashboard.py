@@ -19,7 +19,6 @@ def init_dashboard(server):
     state_totals_fig = px.bar(us_state_counts, x="State", y="Counts", labels={"Counts":"Number of Reports"}, title="State Totals, All Time")
 
     reports_with_map_data = us_states_df.merge(map_data[["City", "County", "State", "State name", "Population", "Density","lat", "lng", "county_lat", "county_lng"]], how="inner", on=["City", "State"])
-    reports_with_map_data = reports_with_map_data.drop(columns=["Unnamed: 0"])
 
     county_counts = reports_with_map_data.groupby(["County", "State", "State name", "county_lat", "county_lng"]).size().reset_index(name="Count")
     county_counts["Text"] = county_counts["County"] + " County, " + county_counts["State"] + "<br>Number of reports: " + county_counts["Count"].apply(str)
