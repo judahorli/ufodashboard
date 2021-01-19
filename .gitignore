@@ -1,2 +1,4 @@
 *.pyc
 .DS_Store
+nuforcData.csv
+nuforcData-1.csv
