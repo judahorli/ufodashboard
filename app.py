@@ -1,2 +1,2 @@
-from src import init_app
+from ufosource import init_app
 app = init_app()
