@@ -12,3 +12,8 @@ Some things I would like to include in the future are:
   - report look up by dat
   
 The file "nuforc-scrape.py" is the python script I used to pull the data off the NUFORC website. I developed this in Jupyter Notebook and exported it as a .py script.
+
+US map data of cities and counties from
+  - https://simplemaps.com/data/us-cities
+  - https://github.com/kjhealy/fips-codes
+  - https://github.com/btskinner/spatial
