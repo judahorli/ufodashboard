@@ -130,3 +130,11 @@ pool.close() at =19:32:50
 pool.join() called at =19:32:50
 pool.join() finished at =19:35:25
 collection end at =19:35:25
+file open at =19:43:53
+pool created at =19:43:53 and pool_size =10
+collection begin at =19:43:53
+read monthUrl= http://www.nuforc.org/webreports/ndxp220422.html at =19:43:56
+pool.close() at =19:43:57
+pool.join() called at =19:43:57
+pool.join() finished at =19:46:31
+collection end at =19:46:31
