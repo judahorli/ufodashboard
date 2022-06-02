@@ -11,7 +11,7 @@ def index():
 @app.route('/random', methods = ['POST'])
 def random_report():
     all_ufo_df = reports
-    random = all_ufo_df.loc[all_ufo_df["Images"] != "[]"].sample(n=1)
+    random = all_ufo_df.sample(n=1)
     link = str(random["Link"].iloc[0])
     city = str(random["City"].iloc[0])
     state = str(random["State"].iloc[0])
