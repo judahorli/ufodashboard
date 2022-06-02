@@ -14,4 +14,3 @@ def init_app():
         app = init_dashboard(app)
 
         return app
-

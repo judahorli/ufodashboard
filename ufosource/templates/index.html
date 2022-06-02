@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
   <script src="{{ url_for('static', filename= 'js/script.js') }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -21,12 +21,12 @@
 <body>
   <h1>USA UFO Reports</h1>
   <h2>(data source: <a href="http://www.nuforc.org/">NUFORC</a>)</h2>
-  <div>A little dashboard app by Judah Orli Perillo (<a href="http://judahorli.app" title="Judah Orli Website">click here for portfolio</a>)</div>
+  <div>A little dashboard app by <a href="http://judahorli.app">Judah Orli Perillo</a></div>
   <div id="random_report"></div>
   <br>
   <div><a href="#" onclick="call_random_report();">click for another random report</a></div>
   <div id="mainContent">
-    <iframe src="/dashapp" width="100%" height="1000">
+    <iframe src="/dashapp" width="100%">
   </div>
 </body>
 
