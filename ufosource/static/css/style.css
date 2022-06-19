@@ -13,7 +13,7 @@ body h1 {
 	font-size: 3rem
 }
 
-body div,body h2,body h4,body h5,body h6,body p {
+body div,body h2,body h4,body h5,body h6,body p, button {
 	font-family: "PT Mono", sans-serif
 }
 
@@ -21,7 +21,20 @@ body #random_report {
 	overflow-y: auto;
 	border: 1px solid black;
 	padding: 1rem;
-	margin: 1rem 0
+	margin-top: 1rem;
+}
+
+body #random_report_button button {
+	border: 1px solid mediumpurple;
+  background: mediumpurple;
+  border-radius: 5px;
+  padding: 0.25rem;
+  font-size: 16px;
+  color: white;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 body #headerInfo {
@@ -32,9 +45,18 @@ body #navigation {
 	padding: 0 2rem 2rem
 }
 
+body #og_link {
+	text-align: right;
+	float: right;
+	font-size: 12px;
+}
+
+body #mainContent {
+	margin-bottom: 4rem;
+}
 body #mainContent iframe {
 	border: none;
-	height: 600px
+	height: 600px;
 }
 
 body .italic {
@@ -58,4 +80,22 @@ body #images .ufo_img {
   object-fit: contain;
   object-position: bottom;
   flex: 3 1 auto;
+}
+
+body #ufo_Footer {
+	background-color: black;
+	color: white;
+	padding: 2rem;
+}
+
+body #ufo_Footer div {
+	padding: .5rem 0;
+}
+
+body #ufo_Footer a {
+	color: cornflowerblue;
+}
+
+body #ufo_Footer a:visited {
+	color: mediumpurple;
 }

@@ -4,7 +4,7 @@ from flask import Flask
 def init_app():
     """Construct core Flask application."""
     app = Flask(__name__, instance_relative_config=False)
-    app.debug = False
+    app.debug = True
 
     with app.app_context():
         # Import parts of our core Flask app

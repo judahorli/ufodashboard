@@ -5,8 +5,10 @@ import pandas as pd
 from .helpers import reports
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template("index.html")
+
 
 @app.route('/random', methods = ['POST'])
 def random_report():
@@ -26,5 +28,5 @@ def random_report():
         for img in imgs:
             img_html += "<img class=\"ufo_img\" src=\"" + img + "\">"
     img_html += "</div>"
-    html = "<h3>Random Report</h3><div><span class=\"bold\">datetime: </span>" + date + "</div><div><span class=\"bold\">location: </span>" + city + ", " + state + "</div><div><span class=\"bold\">duration of incident: </span>" + duration + "</div><div>UFO shape identified as " + shape + " shaped</div><div><span class=\"bold\">incident summary: </span>" + summary + "</div></div>" + img_html + "<a href=\"" + link + "\" target=\"_blank\">original report page</a>"
+    html = "<h3>Random Report</h3><div><span class=\"bold\">datetime: </span>" + date + "</div><div><span class=\"bold\">location: </span>" + city + ", " + state + "</div><div><span class=\"bold\">duration of incident: </span>" + duration + "</div><div>UFO shape identified as " + shape + " shaped</div><div><span class=\"bold\">incident summary: </span>" + summary + "</div></div>" + img_html + "<a id=\"og_link\" href=\"" + link + "\" target=\"_blank\">original report page</a>"
     return jsonify(html=html)

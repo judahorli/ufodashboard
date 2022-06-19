@@ -18,4 +18,3 @@ function call_random_report() {
 
   return false;
 }
-

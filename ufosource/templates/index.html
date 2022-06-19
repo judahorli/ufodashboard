@@ -20,13 +20,17 @@
 
 <body>
   <h1>USA UFO Reports</h1>
-  <h2>(data source: <a href="http://www.nuforc.org/">NUFORC</a>)</h2>
-  <div>A little dashboard app by <a href="http://judahorli.app">Judah Orli Perillo</a></div>
+  <div id="random_report_button"><button  onclick="call_random_report();">new report</button></div>
   <div id="random_report"></div>
-  <br>
-  <div><a href="#" onclick="call_random_report();">click for another random report</a></div>
   <div id="mainContent">
-    <iframe src="/dashapp" width="100%">
+    <iframe src="/dashapp" width="100%"></iframe>
+  </div>
+  <div id="ufo_Footer">
+    <h3>credits &amp; links</h3>
+    <div>data source: <a href="http://www.nuforc.org/">NUFORC</a></div>
+    <div>map data: <a href="https://simplemaps.com/data/us-cities">simplemaps</a></div>
+    <div>code: <a href="https://github.com/judahorli/ufodashboard">GitHub</a></div>
+    <div>author, programmer, data nerd: <a href="http://judahorli.app">jude perillo</a></div>
   </div>
 </body>
 

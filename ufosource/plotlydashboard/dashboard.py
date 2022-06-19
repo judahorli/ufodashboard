@@ -71,22 +71,25 @@ def init_dashboard(server):
 
     # adds title, legend, geography, etc to figure
     county_counts_bubble.update_layout(
-        title_text="UFO Reports by US County",
+        title_text="UFO Reports by County, all time",
         showlegend=True,
         height=700,
         geo=dict(
             scope="usa",
             landcolor="rgb(217, 217, 217)",
-        )
+        ),
+        font=dict(
+            family="PT Mono, monospace",
+            color = "Black")
     )
 
     """Create a Plotly Dash dashboard."""
     dash_app = Dash(
         server=server,
-        routes_pathname_prefix="/dashapp/"
-        # external_stylesheets=[
-        #     '/static/dist/css/styles.css',
-        # ]
+        routes_pathname_prefix="/dashapp/",
+        external_stylesheets=[
+            '../static/css/dashapp.css',
+        ]
     )
 
     # Create Dash Layout
